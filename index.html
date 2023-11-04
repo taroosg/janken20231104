@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>じゃんけん</title>
+</head>
+
+<body>
+  <h1>すごいじゃんけん</h1>
+  <button id="gu">グー</button>
+  <button>チョキ</button>
+  <button>パー</button>
+  <p id="result">結果</p>
+
+  <script>
+    document.getElementById('gu').addEventListener('click', function () {
+      const result = ['win', 'lose', 'draw'][Math.floor(Math.random() * 3)];
+      document.getElementById('result').textContent = result;
+    });
+
+  </script>
+</body>
+
+</html>
